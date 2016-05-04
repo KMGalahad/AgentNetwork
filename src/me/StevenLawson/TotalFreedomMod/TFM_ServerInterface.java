@@ -6,9 +6,9 @@ import java.util.UUID;
 import java.util.regex.Pattern;
 import me.StevenLawson.TotalFreedomMod.Config.TFM_ConfigEntry;
 import me.StevenLawson.TotalFreedomMod.Listener.TFM_PlayerListener;
-import net.minecraft.server.v1_8_R3.EntityPlayer;
-import net.minecraft.server.v1_8_R3.MinecraftServer;
-import net.minecraft.server.v1_8_R3.PropertyManager;
+import net.minecraft.server.v1_9_R1.EntityPlayer;
+import net.minecraft.server.v1_9_R1.MinecraftServer;
+import net.minecraft.server.v1_9_R1.PropertyManager;
 import org.bukkit.ChatColor;
 import org.bukkit.Server;
 import org.bukkit.entity.Player;
@@ -18,7 +18,7 @@ import org.bukkit.event.player.PlayerLoginEvent.Result;
 
 public class TFM_ServerInterface
 {
-    public static final String COMPILE_NMS_VERSION = "v1_8_R3";
+    public static final String COMPILE_NMS_VERSION = "v1_9_R1";
     public static final Pattern USERNAME_REGEX = Pattern.compile("^[\\w\\d_]{3,20}$");
 
     public static void setOnlineMode(boolean mode)
